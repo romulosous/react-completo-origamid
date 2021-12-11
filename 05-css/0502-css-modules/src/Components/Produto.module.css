@@ -1,0 +1,25 @@
+.titulo,
+.preco {
+  color: #43c;
+  --cor: red;
+}
+
+/* Não é aconselhado */
+/* @value cor: red;
+@value cor: red;
+@value cor: red; */
+
+.preco {
+  /* composes: titulo; */
+  color: var(--cor);
+  font-weight: bold;
+}
+
+.comprar {
+  transform: rotate(90deg) translateY(-120px);
+}
+
+/* é melhor so criar um arquivo css global */
+/* :global .container {
+  max-width: 900px;
+} */
